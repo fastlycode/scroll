@@ -10,42 +10,15 @@ for (let i= 0; i < links.length; i++){
     }
 }
 
-const form = document.querySelector('form');
+
+
+const form = document.querySelector('.order-form-inputs');
 const fields = form.querySelectorAll('.field');
 let guestname = document.getElementById("guest-name");
 let phone = document.getElementById("phone");
 let question = document.getElementById("question");
-
-document.getElementById("my-form-send").onclick = function() {
-
-    let hasError = false;
-    let MyItems =[guestname, phone, question];
-    MyItems.forEach(item => {
-if (item.value===""){
-    
-
-   item.classList.add('error');
-    console.log("Не все поля заполены");
-    hasError=true;
-
-}else if (!hasError) {
-  item.classList.remove('error');
- console.log("Форма прошла валидацию");
-    document.getElementById("my-form-send").style.background = "";
-    item.parentElement.style.background = "";
-
-   
-
-}
-
-    });
-
-
-    }
-
-
 fields.forEach((element) => {
-  element.addEventListener('.field', () => {
+  element.addEventListener('input', () => {
     if (element.parentElement.classList.contains('error')) {
       element.parentElement.classList.remove('error');
     }
@@ -56,12 +29,12 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   let hasError = false;
 
-  fields.forEach((fields) => {
-    if (!fields.value) {
-      fields.parentElement.classList.add('error');
+  fields.forEach((element) => {
+    if (!element.value) {
+      element.parentElement.classList.add('error');
       hasError = true;
     } else {
-      fields.parentElement.classList.remove('error');
+      element.parentElement.classList.remove('error');
     }
   });
 
@@ -72,6 +45,8 @@ form.addEventListener('submit', (event) => {
     alert('Спасибо за заказ! Мы скоро свяжемся с вами!');
   }
 });
+
+
 const mobileMenuBtn = document.getElementById("header-burger");
 const mobileMenu = document.querySelector('.mobile-menu');
 console.log(mobileMenu);
@@ -134,4 +109,36 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
+  
+  function languageChange() {
+    let btn = document.querySelectorAll('.current-language');
+    let currentLanguage = document.getElementById('change-language');
+    
+    // Развешиваем событие клика на кнопки
+    for(let i = 0; i < btn.length; i++) {
+      btn[i].addEventListener('click', function() {
+        // При клике на кнопку записываем ее значение в инпут
+        
+        currentLanguage.innerText = this.innerText;
+        // let linkLang = document.querySelector('.language-variants');
+        // let elLang = document.createElement('a');
+        
+        // // create new li element
+        // if (currentLanguage != "RU" ) {
+        // elLang.textContent = 'RU';
+
+        // // add it to the ul element
+        // linkLang.prepend(elLang);
+      
+
+        // console.log(elLang);}
+        // else{
+        //   linkLang.remove(elLang);
+          
+        // }
+      });
+    }
+  
+  }
+  languageChange();
 }

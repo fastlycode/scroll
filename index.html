@@ -42,8 +42,16 @@
         </ul>
       </nav>
       <div class="header-buttons">
-
+<div class="language-select">
         <button class="language btn" id="change-language">ru </button>
+        <div class="language-variants">
+          <a href="#" class="current-language" value="RU">RU</a>
+          <a href="#" class="current-language" value="EN">EN</a>
+    <a href="#" class="current-language" value="CN">CN</a>
+    <a href="#" class="current-language" value="JP">JP</a>
+    <a href="#" class="current-language" value="FR">FR</a>
+        </div>
+      </div>
         <button class="login btn">Вход</button>
         <button class="register btn">Регистрация</button>
 
@@ -378,10 +386,10 @@
         <p class="contacts-desription">Заполните обратную форму, и мы с радостью ответим на них!</p>
         <div class="contacts-inner">
           <div class="contacts-form-inner">
-        <form action="#">
-          <input type="text" class="field" id="guest-name" placeholder="Ваше имя">
-          <input type="text" class="field" id="phone" placeholder="Ваш телефон">
-         <textarea class="field" name="" id="question" cols="30" rows="10" placeholder="Ваш вопрос или предложение"></textarea>
+        <form class="order-form-inputs" action="#">
+         <dgiv class="order-form-group"><div class="order-form-input"> <input type="text" class="field" id="guest-name" placeholder="Ваше имя"></div>
+         <div class="order-form-input">  <input type="text" class="field" id="phone" placeholder="Ваш телефон"></div></dgiv>
+         <div class="order-form-input"><textarea class="field" name="" id="question" cols="30" rows="10" placeholder="Ваш вопрос или предложение"></textarea></div>
           <input type="submit" class="button" id="my-form-send" value="Отправить">
         </form></div>
         <div class="contacts-links">
@@ -416,13 +424,13 @@
       <div class="footer-copyright">Firelinks© 2023</div>
       <nav class="footer-menu">
         <ul class="menu-list">
-          <li class="menu-item"><a data-link="policy">Конфиденциальность</a></li>
+          <li class="menu-item"><a href="./docs/data-policy.pdf" target="_blank" data-link="policy">Конфиденциальность</a></li>
           <li class="menu-item"><a data-link="terms">Правила сервиса</a></li>
           <li class="menu-item"><a data-link="partner">Партнерство</a></li>
         </ul>
       </nav>
     </div>
-    <div class="btn-up"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7Z" fill="#fff"></path> </g></svg></div>
+    <div class="btn-up btn-up_hide"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7Z" fill="#fff"></path> </g></svg></div>
   </footer>
   <script src="./scripts/script.js"></script>
 </body>
