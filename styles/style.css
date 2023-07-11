@@ -529,6 +529,7 @@ border-radius: 27px;
   z-index: 10;
   margin-top: 108px;
 }
+
 .services-title {
   padding-bottom: 53px;
 }
@@ -604,17 +605,20 @@ margin-right: 11px;
 }
 .faq {
 position: relative;
+
 }
-/* .faq::before{
-  position: absolute;
-  content: "";
-  position: absolute;
-  background-image: url("../images/questions-bg.png");
-  z-index: 5;
-  width: 120%;
-  height: 140%;
-  backdrop-filter: brightness(60%);
-} */
+.faq::before{
+ /* position: absolute;
+ content: "";
+top:-75%;
+ z-index: 1;
+ width: 120%;
+ height: 140%;
+ background: url("../images/questions-bg.png");
+backdrop-filter: lightgray brightness(50%);
+opacity: 0.2; */
+
+}
 .tariffs .container {
   
 
@@ -622,7 +626,7 @@ position: relative;
 .tariffs-inner{
   display: flex;
   margin-top: 96px;
-
+  z-index: 100;
 }
 .tariffs-options {
   display: flex;
