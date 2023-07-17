@@ -88,6 +88,7 @@ h1,
 h2,
 h3 {
   color: #fff;
+  
 }
 h2{
   font-size: 81px;
@@ -213,13 +214,18 @@ a {
 border: none;
   cursor: pointer;
   outline: none;
+  z-index: 100;
+
 }
 
 .language,
 .register {
   background: transparent;
 }
-
+.register-now{
+  position: relative;
+  z-index: 100;
+}
 .language {
   position: relative;
   border: 0;
@@ -231,7 +237,7 @@ padding: 0;
 .language-select{
   position: relative;
     display: inline-block;
-
+width: 81px;
 }
 .language-variants{
   
@@ -239,11 +245,11 @@ padding: 0;
   position: absolute;
   background-color: #f1f1f1;
 
-margin-left: -10px;
+margin-left: 12px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;}
   .language-variants a{
-
+    
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -568,6 +574,7 @@ border-radius: 27px;
 border-radius: 27px;
 margin-top: 25px;
 margin-bottom: 53px;
+
 }
 .services-tips-row{
 display: flex;
@@ -585,6 +592,7 @@ padding-bottom: 10px;
 line-height: 34px;
 font-size: 16px;
 font-weight: 700;
+margin-right: 11px;
   }       
 .services-tip {
   line-height: 34px;
@@ -608,20 +616,34 @@ position: relative;
 
 }
 .faq::before{
- /* position: absolute;
+ position: absolute;
  content: "";
-top:-75%;
+top:-110%;
  z-index: 1;
  width: 120%;
- height: 140%;
+ height: 161%;
  background: url("../images/questions-bg.png");
-backdrop-filter: lightgray brightness(50%);
-opacity: 0.2; */
+ background-repeat: no-repeat;
+ background-size: cover;
+ mix-blend-mode: lighten;
+ 
 
 }
-.tariffs .container {
-  
+.tariffs {
+  position: relative;
 
+}
+.tariffs::before{
+  position: absolute;
+  content: "";
+top: -97%;
+   z-index: 1;
+   width: 100%;
+   height: 245%;
+   background: url("../images/tariffs-bg.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   mix-blend-mode: lighten;
 }
 .tariffs-inner{
   display: flex;
@@ -674,6 +696,7 @@ li.tariffs-field:last-child{
 display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 20px;
+  z-index: 100;
 }
 
 .tariffs-item{
@@ -930,6 +953,7 @@ margin-bottom: 27px;
 max-height: 70px;
 padding-right: 194px;
 width: 100%;
+z-index:100;
 }
 .accordion::before{
   content: url('../images/show.svg');
@@ -996,6 +1020,7 @@ display: flex;
 .faq-title{
   margin-bottom: 72px;
   margin-top: 72px;
+
 }
 @media (max-width: 1200px) {
   .btn {
