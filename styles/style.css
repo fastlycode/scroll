@@ -99,7 +99,7 @@ h2{
  font-size: 90px;
  
 
- z-index: 12;
+ z-index: 1000;
  color: #fff;
  background-color:#33caff;
  border-radius:10px ;
