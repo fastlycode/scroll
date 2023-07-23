@@ -616,35 +616,22 @@ position: relative;
 
 }
 .faq::before{
- position: absolute;
- content: "";
-top:-110%;
- z-index: 1;
- width: 120%;
- height: 161%;
- background: url("../images/questions-bg.png");
- background-repeat: no-repeat;
- background-size: cover;
- mix-blend-mode: lighten;
- 
-
-}
+  position: absolute;
+  content: "";
+  top: -110vh;
+  z-index: 1;
+  width: 120vw;
+  height: 161vh;
+  background: url("../images/questions-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: lighten;
+ }
 .tariffs {
   position: relative;
 
 }
-.tariffs::before{
-  position: absolute;
-  content: "";
-top: -97%;
-   z-index: 1;
-   width: 100%;
-   height: 245%;
-   background: url("../images/tariffs-bg.svg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   mix-blend-mode: lighten;
-}
+
 .tariffs-inner{
   display: flex;
   margin-top: 96px;
