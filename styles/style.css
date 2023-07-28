@@ -1093,9 +1093,11 @@ padding-bottom: 27px;
 padding-top: 21px;
 padding-left: 41px;
 padding-right: 51px;
-margin-right: 20px;
+margin-left: 20px;
 }
-
+.one > .review:nth-child(1){
+  margin-left: 0;
+}
 
 @media (max-width: 1200px) {
   .btn {
