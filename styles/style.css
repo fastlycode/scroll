@@ -615,37 +615,32 @@ margin-right: 11px;
 position: relative;
 
 }
-.faq .container{
-  z-index: 1000;
-}
 .faq::before{
- position: absolute;
- content: "";
- top: -95vh;
- z-index: 1;
- width: 120vw;
- height: 163vh;
- background: url("../images/questions-bg.png");
- background-repeat: no-repeat;
- background-size: cover;
- mix-blend-mode: lighten;
-
-}
+  position: absolute;
+  content: "";
+  top: -100vh;
+  z-index: 1;
+  width: 120vw;
+  height: 461vh;
+  background: url("../images/Group54.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: lighten;
+ }
 .tariffs {
   position: relative;
 }
 .tariffs::before{
-  position: absolute;
-  display: block;
+  /* position: absolute;
   content: "";
  top: -100vh;
   z-index: 1;
   width: 120vw;
-  height: 272vh;
+  height: 242vh;
   background: url("../images/tariffs-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  mix-blend-mode: lighten;
+  mix-blend-mode: lighten; */
 
 
 }
@@ -796,9 +791,6 @@ border-bottom: 0;
   margin-top: 65px;
   margin-bottom: 76px;
 }
-.register-actions .container{
-  z-index: 1000;
-}
 .register-action {
   max-width: 879px;
   font-weight: 700;
@@ -809,7 +801,6 @@ padding-bottom: 43px;
 .reviews-slider {
   position: relative;
   min-height: 556px;
-  margin-top: 300px;
 }
 .reviews-slider-title {
   padding-bottom: 39px;
@@ -1032,63 +1023,6 @@ display: flex;
   margin-bottom: 72px;
   margin-top: 72px;
 
-}
-
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-
-swiper-container {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-swiper-slide {
- 
-  font-size: 18px;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  min-height: 248px;
-}
-
-swiper-slide img {
-  display: block;
-  width: 30%;
-  height: 100%;
-  object-fit: cover;
-}
-.swiper-pagination .swiper-pagination-bullets .swiper-pagination-horizontal{
-bottom: -20px;
-}
-.reviews-name{
-  display: flex;
- flex-direction: column;
-justify-content: left;
-}
-.reviews-name > span{
-  color: #fff;
-}
-.reviews-person-inner{
-  display: flex;
-  align-items: flex-start;
-}
-.review{
-max-width: 590px;
-border-radius: 27px;
-border: 1px solid #FFF;
-padding-bottom: 27px;
-padding-top: 21px;
-padding-left: 41px;
-padding-right: 51px;
-}
-.review:nth-child(odd){
-  margin-right: 20px;
 }
 @media (max-width: 1200px) {
   .btn {
