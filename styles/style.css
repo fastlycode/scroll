@@ -28,7 +28,7 @@ html, body{
 
 .timer__item {
   position: relative;
-  min-width: 60px;
+  /* min-width: 60px; */
   margin-left: 10px;
   margin-right: 10px;
   padding-bottom: 15px;
@@ -61,6 +61,7 @@ html, body{
   border-radius: 1996px;
   background: #180F9D;
   filter: blur(580.5px);
+  z-index: -1;
 }
 
 
@@ -378,6 +379,13 @@ button:hover {
 
 .header-buttons {
   display: flex;
+  max-width:350px;
+  max-height: 50px;
+}
+.login-buttons{
+  display: flex;
+  max-width: 280px;
+  max-height: 50px;
 }
 
 .hero {
@@ -854,10 +862,11 @@ padding-bottom: 43px;
   padding-bottom: 39px;
 }
 swiper-container {
-  max-width: 1180px;
+   max-width: 1180px;
    height: 100%;
    margin: 0 auto;
- }
+position: relative;
+}
  
  swiper-slide {
    font-size: 18px;
@@ -867,6 +876,7 @@ swiper-container {
    min-height: 248px;
  width: 100%;
  }
+
  .button-prev{
    position: absolute;
  
