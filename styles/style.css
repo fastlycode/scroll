@@ -51,18 +51,19 @@ html, body{
   right: -15px;
 }
 .news::before{
-position: absolute;
-content: "";
-bottom: 0;
-z-index: -1;
-width: 100vw;
-height:200vh;
-top: -200px;
-background: url("../images/news-bg.svg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: top center center;
-mix-blend-mode: lighten;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+  height:197vh;
+  top: -200px;
+  background-image: url("../images/news-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center center;
+  mix-blend-mode: lighten;
+
 
 }
 
@@ -965,6 +966,25 @@ position: relative;
 .news-text {
 }
 .contacts {
+  position: relative;
+}
+.contacts::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: -1;
+  width: 120%;
+height: 50vh;
+
+  background: #180f9d;
+  border-radius: 500px;
+  filter: blur(580.5px);
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  -webkit-filter: blur(580.5px);
 }
 .contacts-inner{
   display: flex;
@@ -1044,7 +1064,7 @@ position: relative;
 }
 
 .footer {
-  margin-top: 104px;
+  margin-top: 134px;
 }
 .footer .container{
   display: flex;
