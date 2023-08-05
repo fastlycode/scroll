@@ -51,17 +51,19 @@ html, body{
   right: -15px;
 }
 .news::before{
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  z-index: 1;
-  width: 120%;
-  height: 140%;
-  border-radius: 1996px;
-  background: #180F9D;
-  filter: blur(580.5px);
-  z-index: -1;
+position: absolute;
+content: "";
+bottom: 0;
+z-index: -1;
+width: 100vw;
+height:200vh;
+top: -200px;
+background: url("../images/news-bg.svg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center center;
+mix-blend-mode: lighten;
+
 }
 
 
@@ -683,20 +685,7 @@ position: relative;
 .tariffs {
   position: relative;
 }
-.tariffs::before{
-  /* position: absolute;
-  content: "";
- top: -100vh;
-  z-index: 1;
-  width: 120vw;
-  height: 242vh;
-  background: url("../images/tariffs-bg.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  mix-blend-mode: lighten; */
 
-
-}
 
 .tariffs-inner{
   display: flex;
@@ -843,6 +832,23 @@ border-bottom: 0;
   align-items: center;
   margin-top: 65px;
   margin-bottom: 76px;
+  position: relative;
+}
+.register-actions::before{
+  position: absolute;
+  content: "";
+bottom: 0;
+  z-index: 1;
+  width: 497px;
+  height:593px;
+  background: url("../images/tariffs-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+right: 0;
+bottom: -200px;
+  mix-blend-mode: lighten;
+
+
 }
 .register-actions .container{
   z-index: 1000;
@@ -857,6 +863,19 @@ padding-bottom: 43px;
 .reviews-slider {
   position: relative;
   min-height: 556px;
+}
+.reviews-slider::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+  width: 120%;
+  height: 140%;
+  border-radius: 1996px;
+  background: #180F9D;
+  filter: blur(580.5px);
+  z-index: -1;
 }
 .reviews-slider-title {
   padding-bottom: 39px;
