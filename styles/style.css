@@ -832,13 +832,13 @@ border-bottom: 0;
   flex-direction: column;
   align-items: center;
   margin-top: 65px;
-  margin-bottom: 76px;
+  margin-bottom: 85px;
   position: relative;
 }
 .register-actions::before{
   position: absolute;
   content: "";
-bottom: 0;
+bottom: -100px;
   z-index: 1;
   width: 497px;
   height:593px;
@@ -846,7 +846,7 @@ bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
 right: 0;
-bottom: -200px;
+
   mix-blend-mode: lighten;
 
 
@@ -860,6 +860,18 @@ bottom: -200px;
   font-size: 24px;
 padding-bottom: 43px;
   text-align: center;
+}
+.slider-pagination{ 
+ text-align: center;
+
+}
+.swiper-wrapper{
+  position: relative;
+}
+swiper-slide{
+ 
+
+  
 }
 .reviews-slider {
   position: relative;
@@ -880,41 +892,16 @@ padding-bottom: 43px;
 }
 .reviews-slider-title {
   padding-bottom: 39px;
+  padding-top: 20px;
 }
-swiper-container {
-   max-width: 1180px;
-   height: 100%;
-   margin: 0 auto;
-position: relative;
-}
- 
- swiper-slide {
-   font-size: 18px;
-   background: transparent;
-   display: flex;
-   align-items: center;
-   min-height: 248px;
- width: 100%;
- }
 
- .button-prev{
-   position: absolute;
- 
- }
- swiper-slide img {
-   display: block;
-   width: 30%;
-   height: 100%;
- object-fit:cover;
- }
- .pagination{
-   position: absolute;
- }
+
+
  
  .reviews-name{
   display: flex;
   flex-direction: column;
-  margin-left: 170px;
+  padding-left: 170px;
   transform: translateY(-61px) ;
   -webkit-transform: translateY(-61px) ;
   -moz-transform: translateY(-61px) ;
@@ -929,17 +916,20 @@ position: relative;
    align-items: flex-start;
  }
  .review{
- max-width: 590px;
  border-radius: 27px;
  border: 1px solid #FFF;
  padding-bottom: 27px;
  padding-top: 21px;
  padding-left: 41px;
  padding-right: 51px;
- margin-right: 20px;
+
  }
-.reviews-slider-inner {
-}
+ .reviews-slider-inner{
+  max-width: 1170px;
+  margin: 0 auto;
+
+  }
+
 .rewiews-slider-item {
 }
 .news {
@@ -1365,7 +1355,6 @@ textarea{
     cursor: pointer;
     display: inline-block;
     position: relative;
-
     border: none;
     line-height: 28px;
     cursor: pointer;
@@ -1375,7 +1364,7 @@ textarea{
     margin-left: 10px;
     background-color: #33caff;
   }
-}
+
 @media(max-width: 599px){
   .accordion{
     padding-right: 60px;
@@ -1464,7 +1453,11 @@ width: 100%;
     padding-left: 0;
     
   }
-
+.review{
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 100;
+}
 
 }
 @media (max-width: 602px){

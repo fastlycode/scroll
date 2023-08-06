@@ -180,3 +180,35 @@ document.addEventListener('DOMContentLoaded', function () {
   // вызываем функцию countdownTimer каждую секунду
   timerId = setInterval(countdownTimer, 1000);
 });
+
+const swiperEl = document.querySelector('swiper-container')
+Object.assign(swiperEl, {
+  
+  keyboard: true,
+  slidesPerView: 1,
+
+  spaceBetween: 10,
+  navigation: {
+    clickable: true,
+  },
+  pagination: {
+    clickable: true,
+    el:  ".slider-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      
+    },
+    840: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+});
+swiperEl.initialize();
