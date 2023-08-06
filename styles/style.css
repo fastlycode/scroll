@@ -1055,6 +1055,7 @@ height: 50vh;
 
 .footer {
   margin-top: 134px;
+
 }
 .footer .container{
   display: flex;
@@ -1064,6 +1065,7 @@ height: 50vh;
   padding-bottom: 80px;
 }
 .footer-menu {
+
 }
 .menu-list {
 }
@@ -1364,6 +1366,20 @@ textarea{
     margin-left: 10px;
     background-color: #33caff;
   }
+  .news::before{
+    background-image: none;
+  }
+  .reviews-slider::before{
+    height: 150vh;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    top: 100%;
+    filter: blur(400.5px);
+}
+}
 
 @media(max-width: 599px){
   .accordion{
