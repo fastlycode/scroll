@@ -1378,6 +1378,7 @@ textarea{
     -o-border-radius: 100%;
     top: 100%;
     filter: blur(400.5px);
+    right: 0px;
 }
 }
 
