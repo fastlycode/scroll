@@ -1349,10 +1349,7 @@ textarea{
   .menu {
     display: none;
   }
- 
-  .logo {
-    padding-top: 30px;
-  }
+
 }
 @media (max-width: 887px) {
   .services-item{
@@ -1370,9 +1367,7 @@ textarea{
   .header-buttons {
     display: none;
   }
-  .logo {
-    padding-top: 30px;
-  }
+ 
 
   .news::before{
     background-image: none;
