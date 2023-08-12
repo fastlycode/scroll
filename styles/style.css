@@ -50,22 +50,7 @@ html, body{
   position: absolute;
   right: -15px;
 }
-.news::before{
-  position: absolute;
-  content: "";
-  bottom: 0;
-  z-index: -1;
-  width: 100vw;
-  height:197vh;
-  top: -200px;
-  background-image: url("../images/news-bg.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center center;
-  mix-blend-mode: lighten;
 
-
-}
 
 
 * {
@@ -843,7 +828,8 @@ border-bottom: 0;
 .register-actions::before{
   position: absolute;
   content: "";
-bottom: -100px;
+bottom: 0px;
+top: -15vh;
   z-index: 1;
   width: 497px;
   height:593px;
@@ -1060,7 +1046,20 @@ height: 50vh;
 
 .footer {
   margin-top: 134px;
-
+position: relative;
+}
+.footer::before{
+   position: absolute;
+   content: "";
+   bottom: 0;
+   z-index: -1;
+   width: 110vw;
+   height:197vh;
+   background-image: url("../images/news-bg.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center center;
+   mix-blend-mode: lighten;
 }
 .footer .container{
   display: flex;
@@ -1180,6 +1179,11 @@ display: flex;
     padding: 0px 10px;
   }
  
+}
+@media (max-width: 1530px){
+.faq::before{
+  height: 301vh;
+}
 }
 @media (max-width: 1020px){
   .header-buttons{
@@ -1694,4 +1698,4 @@ padding: 0;
 
 }}
 
-
+}
