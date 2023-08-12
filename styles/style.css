@@ -1373,8 +1373,11 @@ textarea{
   }
  
 
-  .news::before{
+  .footer::before{
+    filter: blur(400.5px);
     background-image: none;
+    background: #180F9D;
+    height: 200vh;
   }
   .reviews-slider::before{
     height: 150vh;
