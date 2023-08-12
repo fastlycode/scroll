@@ -431,7 +431,7 @@ button:hover {
   z-index: 1;
   transform: translateY(50%);
   width: 150%;
-  height: 20%;
+  height: 100%;
   background: linear-gradient(191.33deg, #184eaa 8.34%, #261d55 202.88%);
   filter: blur(77px);
 }
@@ -1314,6 +1314,8 @@ textarea{
   .header-buttons {
     display: none;
   }
+  nav.menu{
+    display: none;}
   .header-burger {
     display: block;
     right: 0px;
