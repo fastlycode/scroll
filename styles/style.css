@@ -1372,6 +1372,22 @@ textarea{
   }
 
 }
+@media (max-width: 1000px){
+  .reviews-slider::before{
+    height: 150vh;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    top: 100%;
+    filter: blur(400.5px);
+    right: 0px;
+}
+.news::before{
+  background-image: none;
+}
+}
 @media (max-width: 887px) {
   .services-item{
     padding-right: 20px;
@@ -1396,20 +1412,7 @@ textarea{
     /* background: #180F9D;
     height: 200vh; */
   }
-  .reviews-slider::before{
-    height: 150vh;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    top: 100%;
-    filter: blur(400.5px);
-    right: 0px;
-}
-.news::before{
-  background-image: none;
-}
+
 
 }
 
