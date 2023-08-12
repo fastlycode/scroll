@@ -431,9 +431,10 @@ button:hover {
   z-index: 1;
   transform: translateY(50%);
   width: 150%;
-  height: 100%;
+  height: 20%;
   background: linear-gradient(191.33deg, #184eaa 8.34%, #261d55 202.88%);
   filter: blur(77px);
+  -webkit-filter: blur(77px);
 }
 
 .hero:after {
@@ -878,8 +879,9 @@ swiper-slide{
   height: 140%;
   border-radius: 1996px;
   background: #180F9D;
-  filter: blur(580.5px);
+  filter: blur(1580.5px);
   z-index: -1;
+  -webkit-filter: blur(1580.5px);
 }
 .reviews-slider-title {
   padding-bottom: 39px;
@@ -927,6 +929,21 @@ z-index: 1000;
   position: relative;
 
 }
+.news::before{
+  content: "";
+  position: absolute;
+
+  top: -60vh;
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+  height:180vh;
+  background-image: url("../images/news-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  mix-blend-mode: lighten;
+}
 .news-main-title {
 }
 .news-box {
@@ -949,23 +966,19 @@ z-index: 1000;
 .contacts {
   position: relative;
 }
-.contacts::before{
+.contacts::after{
   content: "";
   position: absolute;
-  top: 50%;
+  bottom: 0;
   right: 20px;
-  z-index: -1;
+  z-index: 1;
   width: 120%;
-height: 50vh;
-
-  background: #180f9d;
-  border-radius: 500px;
-  filter: blur(580.5px);
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  -ms-border-radius: 500px;
-  -o-border-radius: 500px;
-  -webkit-filter: blur(580.5px);
+  height: 150vh;
+  border-radius: 1996px;
+  background: #180F9D;
+  filter: blur(1580.5px);
+  z-index: -1;
+  -webkit-filter: blur(1580.5px);
 }
 .contacts-inner{
   display: flex;
@@ -1052,15 +1065,17 @@ position: relative;
    position: absolute;
    content: "";
    bottom: 0;
+   
    z-index: -1;
-   width: 110vw;
-   height:197vh;
-   background-image: url("../images/news-bg.svg");
+   width: 100vw;
+   height:150vh;
+   background-image: url("../images/footer-bg.png");
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: top center center;
+   background-position: center center;
    mix-blend-mode: lighten;
 }
+
 .footer .container{
   display: flex;
   justify-content: space-between;
@@ -1376,10 +1391,10 @@ textarea{
  
 
   .footer::before{
-    filter: blur(400.5px);
-    background-image: none;
-    background: #180F9D;
-    height: 200vh;
+    /* filter: blur(400.5px); */
+    /* background-image: none; */
+    /* background: #180F9D;
+    height: 200vh; */
   }
   .reviews-slider::before{
     height: 150vh;
