@@ -1407,6 +1407,10 @@ textarea{
     filter: blur(400.5px);
     right: 0px;
 }
+.news::before{
+  background-image: none;
+}
+
 }
 
 @media(max-width: 599px){
