@@ -830,7 +830,7 @@ border-bottom: 0;
   position: absolute;
   content: "";
 bottom: 0px;
-top: -15vh;
+
   z-index: 1;
   width: 497px;
   height:593px;
@@ -853,7 +853,7 @@ right: 0;
 padding-bottom: 43px;
   text-align: center;
 }
-.slider-pagination{ 
+.swiper-pagination{
  text-align: center;
 
 }
@@ -864,6 +864,9 @@ swiper-slide{
  
 
   
+}
+.swiper-button-next, .swiper-button-prev{
+display: block;
 }
 .reviews-slider {
   position: relative;
@@ -914,13 +917,12 @@ swiper-slide{
  padding-bottom: 27px;
  padding-top: 21px;
  padding-left: 41px;
- padding-right: 51px;
+ padding-right: 41px;
 
  }
  .reviews-slider-inner{
   max-width: 1170px;
   margin: 0 auto;
-z-index: 1000;
   }
 
 .rewiews-slider-item {
@@ -933,11 +935,11 @@ z-index: 1000;
   content: "";
   position: absolute;
 
-  top: -60vh;
+  top: -62vh;
   bottom: 0;
   z-index: -1;
   width: 100vw;
-  height:180vh;
+  height:190vh;
   background-image: url("../images/news-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1195,11 +1197,23 @@ display: flex;
   }
  
 }
-@media (max-width: 1530px){
+
+@media (max-width: 1855px){
 .faq::before{
   height: 301vh;
 }
 }
+@media (max-width: 1538px){
+.register-actions::before{
+  transform: scale(.7);
+  -webkit-transform: scale(.7);
+  -moz-transform: scale(.7);
+  -ms-transform: scale(.7);
+  -o-transform: scale(.7);
+  right: -80px;
+  bottom:-250px;
+}
+  }
 @media (max-width: 1020px){
   .header-buttons{
     margin-left: 30px;
@@ -1359,7 +1373,14 @@ textarea{
   .language-select{
     display: none;
   }
-  
+  .register-actions::before{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    top: -15vh;
+}
  
 }
 @media (max-width: 870px) {

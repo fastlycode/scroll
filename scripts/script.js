@@ -189,11 +189,13 @@ Object.assign(swiperEl, {
 
   spaceBetween: 10,
   navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
     clickable: true,
   },
   pagination: {
+    el:  ".swiper-pagination",
     clickable: true,
-    el:  ".slider-pagination",
   },
   breakpoints: {
     640: {
