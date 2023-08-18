@@ -1386,9 +1386,9 @@ textarea{
   .reviews-slider::before{
 display: none;
 }
-/* .news::before{
+.news::before{
   background-image: none;
-  content: "";
+  /* content: "";
   position: absolute;
  
   right: 20px;
@@ -1399,8 +1399,8 @@ display: none;
   background: #180F9D;
   filter: blur(1580.5px);
   z-index: -1;
-  -webkit-filter: blur(1580.5px);
-} */
+  -webkit-filter: blur(1580.5px); */
+}
 .faq::before{
   display: none;
 }
