@@ -78,9 +78,13 @@ border-radius: 17px;
   box-sizing: border-box;
   outline: none;
  color: #fff;
+ outline-color: transparent;
   
 }
-
+input::focus, input::after, input::before{
+  outline: none;
+  outline-color: transparent;
+}
 input:first-child{
   margin-right: 23px;
 
@@ -1001,6 +1005,7 @@ z-index: 1000;
   height: 64px;
   box-sizing: border-box;
   color: #fff;
+  background: transparent;
 }
 
 .contacts-title {
