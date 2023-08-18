@@ -975,7 +975,7 @@ z-index: 1000;
 .contacts {
   position: relative;
 }
-.contacts::after{
+/* .contacts::after{
   content: "";
   position: absolute;
   bottom: 0;
@@ -988,7 +988,7 @@ z-index: 1000;
   filter: blur(1580.5px);
   z-index: -1;
   -webkit-filter: blur(1580.5px);
-}
+} */
 .contacts-inner{
   display: flex;
   justify-content: space-between;
@@ -1383,9 +1383,9 @@ textarea{
 
 }
 @media (max-width: 1000px){
-  .reviews-slider::before{
+  /* .reviews-slider::before{
 display: none;
-}
+} */
 .news::before{
   background-image: none;
   /* content: "";
