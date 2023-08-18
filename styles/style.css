@@ -974,6 +974,7 @@ z-index: 1000;
 }
 .contacts {
   position: relative;
+ 
 }
 /* .contacts::after{
   content: "";
@@ -994,8 +995,12 @@ z-index: 1000;
   justify-content: space-between;
 }
 .contacts-form-inner{
+  z-index: 1000;
   display: flex;
   flex-direction: column;
+}
+.contacts-links{
+  z-index: 1000;
 }
 .order-form-group{
   display: flex;
@@ -1094,7 +1099,7 @@ position: relative;
   padding-bottom: 80px;
 }
 .footer-menu {
-
+z-index: 1000;
 }
 .menu-list {
 }
@@ -1373,6 +1378,9 @@ textarea{
  
 }
 @media (max-width: 870px) {
+  .swiper-button-next svg, .swiper-button-prev svg{
+
+  }
   h2{
     font-size: 58px;
     line-height: 80px;
@@ -1383,9 +1391,9 @@ textarea{
 
 }
 @media (max-width: 1000px){
-  /* .reviews-slider::before{
+  .reviews-slider::before{
 display: none;
-} */
+}
 .news::before{
   background-image: none;
   /* content: "";
@@ -1404,8 +1412,23 @@ display: none;
 .faq::before{
   display: none;
 }
-
-
+.news{
+  background:linear-gradient(#490b6f, #180F9D) ;
+}
+.contacts{
+  background: #180F9D ;
+}
+.contacts-title{
+  margin-top: 0;
+  padding-top: 121px;}
+.footer{
+  background: #180F9D ;
+  margin-top: 0;
+  padding-top: 134px;
+}
+.footer::before{
+ z-index: 0;
+}
 }
 @media (max-width: 887px) {
   .services-item{
@@ -1436,6 +1459,12 @@ display: none;
 }
 
 @media(max-width: 599px){
+  .footer{
+    background: #180F9D ;
+    margin-top: 0;
+    padding-top: 34px;
+   z-index: -1
+  }
   .accordion{
     padding-right: 60px;
   }
@@ -1701,9 +1730,9 @@ z-index: 10;
   .services{
     margin-top: 180px;
   }
-  .contacts-title{
+  /* .contacts-title{
     margin-top: 76px;
-  }
+  } */
 }
 @media (max-width:568px){
   .utilities-box{
