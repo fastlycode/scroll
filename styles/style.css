@@ -1384,22 +1384,28 @@ textarea{
 }
 @media (max-width: 1000px){
   .reviews-slider::before{
-    height: 150vh;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    top: 100%;
-    filter: blur(400.5px);
-    right: 0px;
+display: none;
 }
 .news::before{
   background-image: none;
+  content: "";
+  position: absolute;
+ 
+  right: 20px;
+  z-index: 1;
+  width: 120vw;
+  height: 200vh;
+  border-radius: 1996px;
+  background: #180F9D;
+  filter: blur(1580.5px);
+  z-index: -1;
+  -webkit-filter: blur(1580.5px);
 }
 .faq::before{
   display: none;
 }
+
+
 }
 @media (max-width: 887px) {
   .services-item{
