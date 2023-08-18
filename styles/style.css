@@ -875,8 +875,8 @@ swiper-slide{
   top: 50%;
   right: 20px;
   z-index: 1;
-  width: 120%;
-  height: 140%;
+  width: 120vw;
+  height: 140vh;
   border-radius: 1996px;
   background: #180F9D;
   filter: blur(1580.5px);
