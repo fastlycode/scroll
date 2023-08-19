@@ -539,12 +539,13 @@ button:hover {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
-.utilities .container{
+.utilities {
   position: relative;
   z-index: 100;
   
   
 }
+
 
 .utilities-title {
   font-size: 32px;
@@ -577,6 +578,7 @@ border-radius: 27px;
   position: absolute;
   max-width: 300px;
   right: 0;
+  z-index: 10;
   
 }
 .utilities-bg-mobile{
@@ -841,7 +843,7 @@ border-bottom: 0;
   content: "";
 bottom: 0px;
 top: -15vh;
-  z-index: -1;
+  z-index: 1;
   width: 497px;
   height:593px;
   background: url("../images/tariffs-bg.svg");
@@ -854,7 +856,7 @@ right: 0;
 
 }
 .register-actions .container{
-  z-index: 100;
+  z-index: 700;
 }
 .register-action {
   max-width: 879px;
@@ -1111,7 +1113,7 @@ z-index: 0;
   grid-template-columns: repeat(3, 250px);
 }
 .utilities-bg{
-  bottom: 20px;
+  bottom: -10px;
 }
 .utilities-bg-mobile{
 
@@ -1210,6 +1212,12 @@ display: flex;
     padding: 0px 10px;
   }
  
+}
+@media (min-width: 1280px){
+  .utilities-bg{
+    max-width: 450px;
+    bottom: -120px;
+  }
 }
 @media (max-width: 1530px){
 .faq::before{
