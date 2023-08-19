@@ -564,6 +564,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(3, 285px);
   gap: 20px;
+  z-index: 100;
 
 }
 .utilities-item {
@@ -1644,7 +1645,7 @@ height: 224px;
 position: absolute;
 right: -15px;
 bottom: -100px;  
-z-index: 10;
+z-index: 5;
   }
   .hero-text {
     z-index: 10;
