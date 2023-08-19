@@ -853,7 +853,7 @@ right: 0;
 
 }
 .register-actions .container{
-  z-index: 1000;
+  z-index: 700;
 }
 .register-action {
   max-width: 879px;
@@ -929,7 +929,7 @@ swiper-slide{
  .reviews-slider-inner{
   max-width: 1170px;
   margin: 0 auto;
-z-index: 1000;
+z-index: 100;
   }
 
 .rewiews-slider-item {
@@ -995,12 +995,12 @@ z-index: 1000;
   justify-content: space-between;
 }
 .contacts-form-inner{
-  z-index: 1000;
+  z-index: 100;
   display: flex;
   flex-direction: column;
 }
 .contacts-links{
-  z-index: 1000;
+  z-index: 100;
 }
 .order-form-group{
   display: flex;
@@ -1099,7 +1099,7 @@ position: relative;
   padding-bottom: 80px;
 }
 .footer-menu {
-z-index: 1000;
+z-index: 0;
 }
 .menu-list {
 }
@@ -1463,7 +1463,7 @@ display: none;
     background: #180F9D ;
     margin-top: 0;
     padding-top: 34px;
-   z-index: 1;
+   z-index: 100;
   }
   .footer::before{
     display: none;
