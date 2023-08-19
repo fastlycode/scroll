@@ -193,7 +193,7 @@ Object.assign(swiperEl, {
   },
   pagination: {
     clickable: true,
-    el:  ".slider-pagination",
+    el:  ".swiper-pagination",
   },
   breakpoints: {
     640: {

@@ -539,7 +539,7 @@ button:hover {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
-.utilities {
+.utilities .container {
   position: relative;
   z-index: 100;
   
@@ -856,7 +856,7 @@ right: 0;
 
 }
 .register-actions .container{
-  z-index: 700;
+  z-index: 100;
 }
 .register-action {
   max-width: 879px;
@@ -865,9 +865,10 @@ right: 0;
 padding-bottom: 43px;
   text-align: center;
 }
-.slider-pagination{ 
+.swiper-pagination{
  text-align: center;
-
+top: 10px;
+bottom: 0;
 }
 .swiper-wrapper{
   position: relative;
@@ -880,7 +881,9 @@ swiper-slide{
 .reviews-slider {
   position: relative;
   min-height: 556px;
+
 }
+
 .reviews-slider::before{
   content: "";
   position: absolute;
@@ -932,7 +935,7 @@ swiper-slide{
  .reviews-slider-inner{
   max-width: 1170px;
   margin: 0 auto;
-z-index: 100;
+
   }
 
 .rewiews-slider-item {
@@ -1403,6 +1406,7 @@ textarea{
   .reviews-slider::before{
 display: none;
 }
+
 .news::before{
   background-image: none;
   /* content: "";
@@ -1421,8 +1425,12 @@ display: none;
 .faq::before{
   display: none;
 }
-.news{
+
+.reviews-slider{
   background:linear-gradient(#490b6f, #180F9D) ;
+}
+.news{
+  background: #180F9D;
 }
 .contacts{
   background: #180F9D ;
