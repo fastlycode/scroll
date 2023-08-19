@@ -579,7 +579,7 @@ border-radius: 27px;
   max-width: 300px;
   right: 0;
   z-index: 10;
-  
+  top: 780px;
 }
 .utilities-bg-mobile{
   display: none;
@@ -929,7 +929,7 @@ swiper-slide{
  padding-bottom: 27px;
  padding-top: 21px;
  padding-left: 41px;
- padding-right: 51px;
+ padding-right: 41px;
 
  }
  .reviews-slider-inner{
@@ -1116,7 +1116,7 @@ z-index: 0;
   grid-template-columns: repeat(3, 250px);
 }
 .utilities-bg{
-  bottom: -10px;
+
 }
 .utilities-bg-mobile{
 
@@ -1219,7 +1219,7 @@ display: flex;
 @media (min-width: 1280px){
   .utilities-bg{
     max-width: 450px;
-    bottom: -120px;
+top: 700px;
   }
 }
 @media (max-width: 1530px){
@@ -1476,6 +1476,7 @@ display: none;
 }
 
 @media(max-width: 599px){
+
   .footer{
     background: #180F9D ;
     margin-top: 0;
