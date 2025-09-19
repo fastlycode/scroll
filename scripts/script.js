@@ -189,7 +189,9 @@ Object.assign(swiperEl, {
 
   spaceBetween: 10,
   navigation: {
-    clickable: true,
+    nextEl: '.custom-next',
+    prevEl: '.custom-prev',  
+    disabledClass: 'custom-disabled-button'
   },
   pagination: {
     clickable: true,
@@ -211,4 +213,6 @@ Object.assign(swiperEl, {
     },
   },
 });
-swiperEl.initialize();
+if(typeof(element) != 'undefined' && element != null){ 
+  swiperEl.initialize();
+}
