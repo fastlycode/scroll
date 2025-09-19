@@ -874,11 +874,60 @@ bottom: 0;
 .swiper-wrapper{
   position: relative;
 }
-swiper-slide{
- 
+.swiper-button-next::after, .swiper-button-prev:: {
+  display: none !important; /* Скрыть стандартные стрелки */
+}
+.custom-prev, .custom-next {
+  font-size: 30px;
+  color: #333;
+  background-color: #330E84;
+  padding: 10px;
+  border-radius: 50% ;
+  border: #33CAFF 4px solid;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 62px 62px 62px #33CAFF;
 
+
+}
+.custom-next{
+  position: absolute;
+  right: 10px!important;
+  background-image: url(../images/slider-next-arrow.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+  transition: .9 ease-in-out;
+}
+.custom-prev{
+  position: absolute;
+  left: 10px!important;
+  background-image: url(../images/slider-prev-arrow.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+  transition: .9s ease-in-out;
+}
+.custom-prev.custom-disabled-button{
+  background-color: whitesmoke;
+  transition: .9s ease-in-out;
   
 }
+.custom-next.custom-disabled-button{
+
+background-color: whitesmoke;
+transition: .9s ease-in-out;
+  }
+
+.swiper-container{}
+
 .reviews-slider {
   position: relative;
   padding-bottom: 50px;
@@ -935,7 +984,7 @@ margin-bottom: 50px;
  .reviews-slider-inner{
   max-width: 1170px;
   margin: 0 auto;
-
+position: relative;
   }
 
 .rewiews-slider-item {
@@ -1403,9 +1452,7 @@ textarea{
  
 }
 @media (max-width: 870px) {
-  .swiper-button-disabled{
-    display:none;   
-}
+
   h2{
     font-size: 58px;
     line-height: 80px;
@@ -1583,7 +1630,16 @@ width: 100%;
     border: 0;
   }
 }
+@media(max-width:520px){
+  .custom-next{
+    display: none;
+      }
+      .custom-prev{
+        display: none;
+      }
+}
 @media (max-width: 429px){
+
   .services-item-title{
     font-size: 24px;
   }
