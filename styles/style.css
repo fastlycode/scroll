@@ -1512,6 +1512,9 @@ display: none;
 }
 }
 @media (max-width: 887px) {
+  .contacts-title{
+    padding-top: 50px;
+  }
   .services-item{
     padding-right: 20px;
     padding-left: 20px;
