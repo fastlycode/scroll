@@ -1498,9 +1498,7 @@ display: none;
 .news{
   background: #180F9D;
 }
-.contacts{
-  background: #180F9D ;
-}
+
 .contacts-title{
   margin-top: 0;
   padding-top: 121px;}
@@ -1511,6 +1509,11 @@ display: none;
 }
 .footer::before{
  z-index: 0;
+}
+}
+@media(max-width:2000px){
+  .contacts{
+  background: #180F9D ;
 }
 }
 @media (max-width: 887px) {
