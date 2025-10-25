@@ -16,6 +16,9 @@ button{
   font-weight: 400;
   font-display: swap;
 }
+body{
+  overflow-y: hidden;
+}
 html, body{
   overflow-x: hidden;
 }
@@ -477,7 +480,12 @@ button:hover {
   min-height: 42px;
   max-width: 158px;
 }
-
+.mobile-logo img{
+    vertical-align: bottom;
+  min-height: 42px;
+  max-width: 158px;
+  display: none;
+}
 .logo {
 }
 
@@ -1464,7 +1472,14 @@ textarea{
   }
 
 }
-
+@media (max-width: 1000px){
+.logo{
+  display: none;
+}
+.mobile-logo img{
+  display: block;
+}
+}
 @media (max-width: 1024px){
   .review{
     margin-bottom: 35px;
@@ -1498,7 +1513,9 @@ display: none;
 .news{
   background: #180F9D;
 }
-
+.contacts{
+  background: #180F9D ;
+}
 .contacts-title{
   margin-top: 0;
   padding-top: 121px;}
@@ -1509,11 +1526,6 @@ display: none;
 }
 .footer::before{
  z-index: 0;
-}
-}
-@media(max-width:2000px){
-  .contacts{
-  background: #180F9D ;
 }
 }
 @media (max-width: 887px) {
